@@ -31,7 +31,7 @@ def calculator():
         print("Invalid choice")
 
 
-# main program
+# main program for a refreshable calculator option
 while True:
     calculator()
 
