@@ -1,4 +1,4 @@
-# Basic Calculator with Restart / Refresh option
+# Basic Calculator in Python
 
 def calculator():
     num1 = float(input("Enter first number: "))
