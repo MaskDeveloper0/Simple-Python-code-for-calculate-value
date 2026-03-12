@@ -4,7 +4,7 @@ def calculator():
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
 
-    print("\nSelect operation:")
+    print("\nSelect operation:(Give in 1 or 2 or 3 or 4")
     print("1. Add (+)")
     print("2. Subtract (-)")
     print("3. Multiply (*)")
@@ -31,7 +31,8 @@ def calculator():
         print("Invalid choice")
 
 
-# main program for a refreshable calculator option
+# main program for a refreshable calculator option 
+
 while True:
     calculator()
 
