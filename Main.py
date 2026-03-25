@@ -1,5 +1,7 @@
-# Basic Calculator in Python
+# Basic Calculator in Python 
 
+
+#For user who use a older version of windows , for example win 7 users , in your windows this ai assistant can not show a emojies.
 def calculator():
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
@@ -47,3 +49,5 @@ while True:
     else:
         print("Calculator Closed 👋")
         break
+
+        #End
