@@ -1,12 +1,21 @@
-# Basic Calculator in Python 
+# Improved Calculator in Python
+
+def get_number(prompt):
+    """Safely get a number from user"""
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("❌ Invalid input! Please enter a valid number.\n")
 
 
-#For user who use a older version of windows , for example win 7 users , in your windows this ai assistant can not show a emojies.
 def calculator():
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+    print("\n=== Simple Calculator ===")
 
-    print("\nSelect operation:(Give in 1 or 2 or 3 or 4")
+    num1 = get_number("Enter first number: ")
+    num2 = get_number("Enter second number: ")
+
+    print("\nSelect operation:")
     print("1. Add (+)")
     print("2. Subtract (-)")
     print("3. Multiply (*)")
@@ -15,39 +24,39 @@ def calculator():
     choice = input("Enter choice (1/2/3/4): ")
 
     if choice == "1":
-        print("Result:", num1 + num2)
+        print("✅ Result:", num1 + num2)
 
     elif choice == "2":
-        print("Result:", num1 - num2)
+        print("✅ Result:", num1 - num2)
 
     elif choice == "3":
-        print("Result:", num1 * num2)
+        print("✅ Result:", num1 * num2)
 
     elif choice == "4":
         if num2 != 0:
-            print("Result:", num1 / num2)
+            print("✅ Result:", num1 / num2)
         else:
-            print("Error: Cannot divide by zero")
+            print("❌ Error: Cannot divide by zero")
 
     else:
-        print("Invalid choice")
+        print("❌ Invalid choice")
 
 
-# main program for a refreshable calculator option 
-
+# Main loop
 while True:
     calculator()
 
-    print("\n1. Restart / Refresh Calculator")
+    print("\nOptions:")
+    print("1. Continue")
     print("2. Exit")
 
     option = input("Choose option: ")
 
     if option == "1":
-        print("\nRestarting Calculator...\n")
         continue
-    else:
+    elif option == "2":
         print("Calculator Closed 👋")
         break
-
-        #End
+    else:
+        print("Invalid option, exiting...")
+        break
